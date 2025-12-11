@@ -77,7 +77,7 @@ console.log(playerList[1].favorites[1]);
 John, Bob, Michael の年齢の平均値を計算した結果をコンソールに出力してください。
 **/    
 let average = (playerList[0].age + playerList[1].age + playerList[2].age);
-average /= 3;
+//average /= 3; averageに対して
 console.log(average)
 
 
@@ -107,10 +107,10 @@ sayWorld();
  **/
 
 user.birthday = '2000-09-27';
-function sayHello(){
+user.sayHello = function() {
 	console.log('Hello!');
 }
-sayHello();
+user.sayHello();
 
 
 
@@ -182,7 +182,7 @@ console.log('5を3で割った余は' + remainder(5, 3) + 'です。');
 
 let random = Math.floor(Math.random() * 10);
 console.log('random => ',random);
-
+console.log(Math.random());
 
 //Q2 コールバック関数
 /*関数 setTimeout を使用し、3 秒後に以下のようにコンソールに出力してください。
@@ -210,7 +210,7 @@ if (num > 0){
 	console.log('num is greater than 0');
 } else if(num < 0){
 	console.log('num is less than 0');
-} else if(num == 0){
+} else if(num === 0){
 	console.log('num is 0');
 }
 
@@ -241,14 +241,14 @@ Number 以外の時は not number
 let mixed = [4, '2', 5, '8', '9', 0, 1];
 for (let i = 0; i < mixed.length; i++) {
 	
-	if (typeof mixed[i] === 'number' && mixed[i] % 2 === 0) {
-		console.log('even');
-	}
-
-	else if (typeof mixed[i] === 'number' && mixed[i] % 2 === 1){
-		console.log('odd');
-	}
-	else {
+	if (typeof mixed[i] === 'string') {
 		console.log('not number');
+	} else if (typeof mixed[i] === 'number') {
+		if (mixed[i] % 2 === 0) {
+			console.log('even');
+		} else {
+			console.log('odd');
+		}
 	}
 }
+
