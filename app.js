@@ -6,7 +6,7 @@
     let nickname = 'ごっしー';
     let age = 28;
     let name = '私のニックネームは' + nickname + 'です。年齢は' + age + 'です。';
-    console.log(name)
+    console.log(name);
 
 
 //Q2 配列
@@ -31,11 +31,11 @@ let user = {
 **/
 
     let user = {
-    name: 'John',
-    age: 26,
-    bloodType: 'A',
-    favorite: 'card',
-    };
+        name: 'John',
+        age: 26,
+        bloodType: 'A',
+        favorite: 'card',
+        };
     console.log(user.age);
 
 
@@ -66,17 +66,27 @@ let playerList = [
     {
         name: 'John',
         age: 26,
-        favorites: ['Card Game', 'Basket Ball', 'Programming'],
+        favorites: [
+            'Card Game',
+            'Basket Ball',
+            'Programming'
+        ],
     },
     {
         name: 'Bob',
         age: 33,
-        favorites: ['Tinder', 'The Legend of Zelda'],
+        favorites: [
+            'Tinder',
+            'The Legend of Zelda'
+        ],
     },
     {
         name: 'Michael',
         age: 22,
-        favorites: ['Football', 'Smash Bros.'],
+        favorites: [
+            'Football',
+            'Smash Bros.'
+        ],
     },
     ];
     console.log(playerList[1].favorites[1]);
@@ -132,31 +142,28 @@ let calc = {};
 ・2 つの引数 x, y の商をコンソールに出力する divide メソッドを定義し、5 になるように実行して下さい。
  */
 
-    let calc = {};
-    function add(x, y){
-        let calc = x + y;
-        console.log(calc);
-    }
-    add(3, 4);
+    let calc = {
+        add: function(x, y) {
+            console.log(x + y);
+        },
+        subtract: function(x, y) {
+            console.log(x - y);
+        },
+        multiply: function(x, y) {
+            console.log(x * y);
+        },
+        divide: function(x, y) {
+            console.log(x / y);
+        },
+    };
 
-    function subtract(x, y){
-        let calc = x - y;
-        console.log(calc);
-    }
-    subtract(20, 10);
+    calc.add(3,4);
+    calc.subtract(20,10);
+    calc.multiply(7,7);
+    calc.divide(10,2);
 
-    function multiply(x, y){
-        let calc = x * y;
-        console.log(calc);
-    }
-    multiply(7, 7);
 
-    function divide(x, y){
-        let calc = x / y;
-        console.log(calc);
-    }
-    divide(10, 2);
-
+    
 
 //Q9 返り値
 /*
@@ -166,8 +173,8 @@ let calc = {};
 */
 
     function remainder(x, y) {
-        let BBB = x % y;
-        return BBB;
+        let number = x % y;
+        return number;
     }
     console.log('5を3で割った余は' + remainder(5, 3) + 'です。');
 
@@ -225,11 +232,9 @@ num が 0 であればnum is 0
     let num = 0;
     if (num > 0){
         console.log('num is greater than 0');
-    }
-    else if(num < 0){
+    }else if(num < 0){
         console.log('num is less than 0');
-    }
-    else if(num == 0){
+    }else if(num == 0){
         console.log('num is 0');
     }
 
@@ -241,7 +246,7 @@ num が 0 であればnum is 0
 */
 
     let numbers = [];
-    for (let i = 0; i < 99; i++) {
+    for (let i = 0; i < 100; i++) {
         numbers.push(i);
     }
     console.log(numbers);
