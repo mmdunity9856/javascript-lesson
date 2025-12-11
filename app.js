@@ -3,10 +3,11 @@
 /**変数 nickname, age に自分の名前と年齢を代入し、文字列連結で以下のようにコンソールに出力してください。
 **/
 
-    let nickname = 'ごっしー';
-    let age = 28;
-    let name = '私のニックネームは' + nickname + 'です。年齢は' + age + 'です。';
-    console.log(name);
+let nickname = 'ごっしー';
+let age = 28;
+let name = '私のニックネームは' + nickname + 'です。年齢は' + age + 'です。';
+console.log(name);
+
 
 
 //Q2 配列
@@ -14,91 +15,71 @@
 その中から JavaScript, Python を取得し、テンプレートリテラルを用いて以下のようにコンソールに出力してください。
 **/
 
-    let languages = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Go'];
-    let templateText = `私の好きな言語は${languages[0]}です。次は${languages[3]}を勉強してみたいです。`;
-    console.log(templateText);
+let languages = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Go'];
+let templateText = `私の好きな言語は${languages[0]}です。次は${languages[3]}を勉強してみたいです。`;
+console.log(templateText);
+
 
 
 //Q3 オブジェクト
 /**下記の変数 user を使用し 26 をコンソールに出力してください。
-
-let user = {
-  name: 'John',
-  age: 26,
-  bloodType: 'A',
-  favorite: 'card',
 };
 **/
 
-    let user = {
-        name: 'John',
-        age: 26,
-        bloodType: 'A',
-        favorite: 'card',
-        };
-    console.log(user.age);
+let user = {
+    name: 'John',
+    age: 26,
+    bloodType: 'A',
+    favorite: 'card',
+};
+console.log(user.age);
+
 
 
 //Q4 配列 × オブジェクト
 /**下記の変数 playerList を使用し The Legend of Zelda をコンソールに出力してください。
-
-let playerList = [
-  {
-    name: 'John',
-    age: 26,
-    favorites: ['Card Game', 'Basket Ball', 'Programming'],
-  },
-  {
-    name: 'Bob',
-    age: 33,
-    favorites: ['Tinder', 'The Legend of Zelda'],
-  },
-  {
-    name: 'Michael',
-    age: 22,
-    favorites: ['Football', 'Smash Bros.'],
-  },
-];
 **/
 
 
-    let playerList = [
-    {
-        name: 'John',
-        age: 26,
-        favorites: [
-            'Card Game',
-            'Basket Ball',
-            'Programming'
-        ],
-    },
-    {
-        name: 'Bob',
-        age: 33,
-        favorites: [
-            'Tinder',
-            'The Legend of Zelda'
-        ],
-    },
-    {
-        name: 'Michael',
-        age: 22,
-        favorites: [
-            'Football',
-            'Smash Bros.'
-        ],
-    },
-    ];
-    console.log(playerList[1].favorites[1]);
+let playerList = [
+		{
+				name: 'John',
+				age: 26,
+				favorites: [
+						'Card Game',
+						'Basket Ball',
+						'Programming'
+				],
+		},
+		{
+				name: 'Bob',
+				age: 33,
+				favorites: [
+						'Tinder',
+						'The Legend of Zelda'
+				],
+		},
+		{
+				name: 'Michael',
+				age: 22,
+				favorites: [
+						'Football',
+						'Smash Bros.'
+				],
+		},
+];
+console.log(playerList[1].favorites[1]);
+
 
 
 //Q5 四則演算
 /**Q4 で定義した変数 playerList を使用し、
 John, Bob, Michael の年齢の平均値を計算した結果をコンソールに出力してください。
 **/    
-    let average = (playerList[0].age + playerList[1].age + playerList[2].age);
-    average /= 3;
-    console.log(average)
+let average = (playerList[0].age + playerList[1].age + playerList[2].age);
+average /= 3;
+console.log(average)
+
 
 
 //Q6 関数
@@ -106,15 +87,16 @@ John, Bob, Michael の年齢の平均値を計算した結果をコンソール�
 ・Hello とコンソールに出力する関数 sayHello を定義し、実行してください。
 ・変数 sayWorld に World とコンソールに出力する無名関数を代入し、実行してください。
 **/    
-    function sayHello(){
-        console.log('Hello');
-    };
-    sayHello();
+function sayHello(){
+		console.log('Hello');
+};
+sayHello();
 
-    const sayWorld = function(){
-        console.log('World')
-    }
-    sayWorld();
+const sayWorld = function(){
+		console.log('World')
+}
+sayWorld();
+
 
 
 //Q7 メソッド
@@ -124,17 +106,17 @@ John, Bob, Michael の年齢の平均値を計算した結果をコンソール�
 ※ いずれも Q3 で定義した変数 user を直接書き換えないこと
  **/
 
-    user.birthday = '2000-09-27';
-    function sayHello(){
-        console.log('Hello!');
-    }
-    sayHello();
+user.birthday = '2000-09-27';
+function sayHello(){
+		console.log('Hello!');
+}
+sayHello();
+
+
 
 //Q8 引数
 /*
 下記の空のオブジェクト calc を使用し、以下問題を解いてください。
-
-let calc = {};
 
 ・2 つの引数 x, y の和をコンソールに出力する add メソッドを定義し、7 になるように実行して下さい。
 ・2 つの引数 x, y の差をコンソールに出力する subtract メソッドを定義し、10 になるように実行して下さい。
@@ -142,28 +124,25 @@ let calc = {};
 ・2 つの引数 x, y の商をコンソールに出力する divide メソッドを定義し、5 になるように実行して下さい。
  */
 
-    let calc = {
-        add: function(x, y) {
-            console.log(x + y);
-        },
-        subtract: function(x, y) {
-            console.log(x - y);
-        },
-        multiply: function(x, y) {
-            console.log(x * y);
-        },
-        divide: function(x, y) {
-            console.log(x / y);
-        },
-    };
+let calc = {};
+calc.add = function(x, y) {
+	console.log(x + y); 
+}
+calc.subtract = function(x, y) {
+	console.log(x - y); 
+}
+calc.multiply = function(x, y) {
+	console.log(x * y); 
+}
+calc.divide = function(x, y) {
+	console.log(x / y); 
+}
+calc.add(3,4);
+calc.subtract(20,10);
+calc.multiply(7,7);
+calc.divide(10,2);
 
-    calc.add(3,4);
-    calc.subtract(20,10);
-    calc.multiply(7,7);
-    calc.divide(10,2);
-
-
-    
+	
 
 //Q9 返り値
 /*
@@ -172,11 +151,12 @@ let calc = {};
 5 を 3 で割った余りは 2 です。
 */
 
-    function remainder(x, y) {
-        let number = x % y;
-        return number;
-    }
-    console.log('5を3で割った余は' + remainder(5, 3) + 'です。');
+function remainder(x, y) {
+		let number = x % y;
+		return number;
+}
+console.log('5を3で割った余は' + remainder(5, 3) + 'です。');
+
 
 
 //Q10 スコープ
@@ -186,13 +166,9 @@ let calc = {};
 
 スコープ
 参照
-function foo() {
-  let x = 1;
-}
-console.log(x);
 */
 
-    //関数外のため、変数が参照できず、スコープが無効になっているから。
+//関数外のため、変数が参照できず、スコープが無効になっているから。
 
 
 
@@ -204,8 +180,8 @@ console.log(x);
 0 ~ 9 のランダムな整数をコンソールに出力してください。
 */
 
-    let random = Math.floor(Math.random() * 10);
-    console.log('random => ',random);
+let random = Math.floor(Math.random() * 10);
+console.log('random => ',random);
 
 
 //Q2 コールバック関数
@@ -214,9 +190,9 @@ console.log(x);
 Hello World!
 */
 
-    setTimeout(() => {
-        console.log('Hello World');
-    }, 3000);
+setTimeout(() => {
+		console.log('Hello World');
+}, 3000);
 
 
 //Q3 if
@@ -229,14 +205,14 @@ num が 0 より小さければnum is less than 0
 num が 0 であればnum is 0
 */
 
-    let num = 0;
-    if (num > 0){
-        console.log('num is greater than 0');
-    }else if(num < 0){
-        console.log('num is less than 0');
-    }else if(num == 0){
-        console.log('num is 0');
-    }
+let num = 0;
+if (num > 0){
+		console.log('num is greater than 0');
+} else if(num < 0){
+		console.log('num is less than 0');
+} else if(num == 0){
+		console.log('num is 0');
+}
 
 
 //Q4 for
@@ -245,35 +221,34 @@ num が 0 であればnum is 0
 値が追加された状態の変数 numbers をコンソールに出力してください
 */
 
-    let numbers = [];
-    for (let i = 0; i < 100; i++) {
-        numbers.push(i);
-    }
-    console.log(numbers);
+let numbers = [];
+for (let i = 0; i < 100; i++) {
+		numbers.push(i);
+}
+console.log(numbers);
 
 
 //Q5 for × if
 /*
 以下の変数 mixed から 要素を一つずつ取り出し、下記条件のもと文字列をコンソールに出し分ける処理を作成してください。
 
-let mixed = [4, '2', 5, '8', '9', 0, 1];
 条件
 Number であり偶数の時は even
 Number であり奇数の時は odd
 Number 以外の時は not number
 */
 
-    let mixed = [4, '2', 5, '8', '9', 0, 1];
-    for (let i = 0; i < mixed.length; i++) {
-        
-        if (typeof mixed[i] === 'number' && mixed[i] % 2 === 0) {
-            console.log('even');
-        }
+let mixed = [4, '2', 5, '8', '9', 0, 1];
+for (let i = 0; i < mixed.length; i++) {
+		
+		if (typeof mixed[i] === 'number' && mixed[i] % 2 === 0) {
+				console.log('even');
+		}
 
-        else if (typeof mixed[i] === 'number' && mixed[i] % 2 === 1){
-            console.log('odd');
-        }
-        else {
-            console.log('not number');
-        }
-    }
+		else if (typeof mixed[i] === 'number' && mixed[i] % 2 === 1){
+				console.log('odd');
+		}
+		else {
+				console.log('not number');
+		}
+}
