@@ -27,10 +27,10 @@ console.log(templateText);
 **/
 
 let user = {
-    name: 'John',
-    age: 26,
-    bloodType: 'A',
-    favorite: 'card',
+	name: 'John',
+	age: 26,
+	bloodType: 'A',
+	favorite: 'card',
 };
 console.log(user.age);
 
@@ -42,31 +42,31 @@ console.log(user.age);
 
 
 let playerList = [
-		{
-				name: 'John',
-				age: 26,
-				favorites: [
-						'Card Game',
-						'Basket Ball',
-						'Programming'
-				],
-		},
-		{
-				name: 'Bob',
-				age: 33,
-				favorites: [
-						'Tinder',
-						'The Legend of Zelda'
-				],
-		},
-		{
-				name: 'Michael',
-				age: 22,
-				favorites: [
-						'Football',
-						'Smash Bros.'
-				],
-		},
+	{
+		name: 'John',
+		age: 26,
+		favorites: [
+				'Card Game',
+				'Basket Ball',
+				'Programming'
+		],
+	},
+	{
+		name: 'Bob',
+		age: 33,
+		favorites: [
+				'Tinder',
+				'The Legend of Zelda'
+		],
+	},
+	{
+		name: 'Michael',
+		age: 22,
+		favorites: [
+				'Football',
+				'Smash Bros.'
+		],
+	},
 ];
 console.log(playerList[1].favorites[1]);
 
@@ -88,12 +88,12 @@ console.log(average)
 ・変数 sayWorld に World とコンソールに出力する無名関数を代入し、実行してください。
 **/    
 function sayHello(){
-		console.log('Hello');
+	console.log('Hello');
 };
 sayHello();
 
 const sayWorld = function(){
-		console.log('World')
+	console.log('World')
 }
 sayWorld();
 
@@ -108,7 +108,7 @@ sayWorld();
 
 user.birthday = '2000-09-27';
 function sayHello(){
-		console.log('Hello!');
+	console.log('Hello!');
 }
 sayHello();
 
@@ -152,8 +152,8 @@ calc.divide(10,2);
 */
 
 function remainder(x, y) {
-		let number = x % y;
-		return number;
+	let number = x % y;
+	return number;
 }
 console.log('5を3で割った余は' + remainder(5, 3) + 'です。');
 
@@ -191,7 +191,7 @@ Hello World!
 */
 
 setTimeout(() => {
-		console.log('Hello World');
+	console.log('Hello World');
 }, 3000);
 
 
@@ -207,11 +207,11 @@ num が 0 であればnum is 0
 
 let num = 0;
 if (num > 0){
-		console.log('num is greater than 0');
+	console.log('num is greater than 0');
 } else if(num < 0){
-		console.log('num is less than 0');
+	console.log('num is less than 0');
 } else if(num == 0){
-		console.log('num is 0');
+	console.log('num is 0');
 }
 
 
@@ -223,7 +223,7 @@ if (num > 0){
 
 let numbers = [];
 for (let i = 0; i < 100; i++) {
-		numbers.push(i);
+	numbers.push(i);
 }
 console.log(numbers);
 
@@ -240,15 +240,15 @@ Number 以外の時は not number
 
 let mixed = [4, '2', 5, '8', '9', 0, 1];
 for (let i = 0; i < mixed.length; i++) {
-		
-		if (typeof mixed[i] === 'number' && mixed[i] % 2 === 0) {
-				console.log('even');
-		}
+	
+	if (typeof mixed[i] === 'number' && mixed[i] % 2 === 0) {
+		console.log('even');
+	}
 
-		else if (typeof mixed[i] === 'number' && mixed[i] % 2 === 1){
-				console.log('odd');
-		}
-		else {
-				console.log('not number');
-		}
+	else if (typeof mixed[i] === 'number' && mixed[i] % 2 === 1){
+		console.log('odd');
+	}
+	else {
+		console.log('not number');
+	}
 }
