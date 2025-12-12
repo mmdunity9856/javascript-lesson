@@ -77,8 +77,7 @@ console.log(playerList[1].favorites[1]);
 John, Bob, Michael の年齢の平均値を計算した結果をコンソールに出力してください。
 **/    
 let average = (playerList[0].age + playerList[1].age + playerList[2].age);
-//average /= 3; averageに対して
-console.log(average)
+console.log(average /3);
 
 
 
@@ -182,7 +181,6 @@ console.log('5を3で割った余は' + remainder(5, 3) + 'です。');
 
 let random = Math.floor(Math.random() * 10);
 console.log('random => ',random);
-console.log(Math.random());
 
 //Q2 コールバック関数
 /*関数 setTimeout を使用し、3 秒後に以下のようにコンソールに出力してください。
@@ -243,10 +241,11 @@ let mixed = [4, '2', 5, '8', '9', 0, 1];
 for (let i = 0; i < mixed.length; i++) {
 	
 	if (typeof mixed[i] !== 'number') {
-			console.log('not number');
-		} else if(mixed[i] % 2 === 0){
-			console.log('even');
-		} else{
-			console.log('odd');}
+		console.log('not number');
+	} else if (mixed[i] % 2 === 0) {
+		console.log('even');
+	} else {
+		console.log('odd');
+	}
 }
 
