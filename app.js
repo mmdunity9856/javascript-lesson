@@ -46,25 +46,25 @@ let playerList = [
 		name: 'John',
 		age: 26,
 		favorites: [
-				'Card Game',
-				'Basket Ball',
-				'Programming'
+			'Card Game',
+			'Basket Ball',
+			'Programming'
 		],
 	},
 	{
 		name: 'Bob',
 		age: 33,
 		favorites: [
-				'Tinder',
-				'The Legend of Zelda'
+			'Tinder',
+			'The Legend of Zelda'
 		],
 	},
 	{
 		name: 'Michael',
 		age: 22,
 		favorites: [
-				'Football',
-				'Smash Bros.'
+			'Football',
+			'Smash Bros.'
 		],
 	},
 ];
